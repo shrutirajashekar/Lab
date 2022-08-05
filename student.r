@@ -25,6 +25,7 @@ for(i in 1:n)
 student<-cbind(student,age)
 print(student)
 
-stud=subset(student,age<20 & marks>20)
-print(stud)
-
+for(i in 1:n) # Print student age > 20 , marks > 25
+  if (student[i,][3]  > 25)
+   if(student[i,][2] >5)
+     print(student[i,])
